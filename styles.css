@@ -1,99 +1,126 @@
-/* Global Styles */
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f0f8ff; /* Light blue background color for a positive feel */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTB The Mortgage Guy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="RTB The Mortgage Guy - Helping you navigate the world of mortgages and real estate loans with ease and confidence.">
+    <meta name="keywords" content="Mortgage, Real Estate Loans, Mortgage Loan Originator, Banking, Insurance, Underwriting">
+    
+    <!-- Security Meta Tags -->
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';">
+    <!-- X-Content-Type-Options -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <!-- X-Frame-Options -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <!-- X-XSS-Protection -->
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 
-header {
-    background-color: #333;
-    padding: 20px;
-    color: #fff;
-}
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="RTB new logo version 2.webp" alt="RTB The Mortgage Guy Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-.logo img {
-    max-width: 150px;
-}
+<div class="hero">
+    <div class="hero-overlay">
+        <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+</div>
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
+<main>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to RTB The Mortgage Guy! My name is Rodrigo Beltran, and I am dedicated to helping you navigate the world of mortgages and real estate loans with ease and confidence.</p>
+            <p>With a diverse background in banking, insurance, underwriting, and several years as a Mortgage Loan Originator, I bring a wealth of experience and knowledge to the table.</p>
+        </div>
+    </section>
 
-.nav-links li {
-    margin-left: 20px;
-}
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Why Choose RTB The Mortgage Guy?</h2>
+            <p>As a partner with Nexa Mortgage, the largest mortgage broker in the US, I have access to over 200 lenders. This extensive network allows me to offer a wide range of mortgage solutions tailored to meet the unique needs of each client.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Personal Mortgages</h3>
+                    <p>Tailored to fit your specific needs and financial situation.</p>
+                </div>
+                <div class="card">
+                    <h3>Investment Products</h3>
+                    <p>Designed to maximize your returns and grow your portfolio.</p>
+                </div>
+                <div class="card">
+                    <h3>Commercial Mortgages</h3>
+                    <p>Expert guidance for your business property investments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    transition: color 0.3s ease;
-}
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Name: Rodrigo Beltran</p>
+            <p>Email: <a href="mailto:RTB.TheMortgageGuy@gmail.com" class="button">RTB.TheMortgageGuy@gmail.com</a></p>
+            <p>Phone: <a href="tel:6028874441" class="button">602-887-4441</a></p>
+            <p>NMLS ID Number: 761285</p>
+            <p>Connect with me on social media:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61559946999856" target="_blank" class="social-button facebook">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/RTB.TheMortgageGuy" target="_blank" class="social-button instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.youtube.com/channel/UCaMmxph07Qv22Ga4Dm05FyQ" target="_blank" class="social-button youtube">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                <a href="https://www.tiktok.com/@RTB.TheMortgageGuy" target="_blank" class="social-button tiktok">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+                <a href="https://threads.com/RTB.TheMortgageGuy" target="_blank" class="social-button threads">
+                    <i class="fab fa-threads"></i> Threads
+                </a>
+            </div>
+            <img src="Profilepic.png" alt="Rodrigo Beltran" class="profile-picture">
+        </div>
+        <div class="contact-form">
+            <h3>Contact Form</h3>
+            <form action="mailto:RTB.TheMortgageGuy@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+</main>
 
-.nav-links a:hover {
-    color: #ff7f50;
-}
+<footer>
+    <div class="container">
+        <p>&copy; 2024 RTB The Mortgage Guy. All rights reserved.</p>
+    </div>
+</footer>
 
-.hero {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    height: 70vh;
-    background: url('Family photo for website.png') no-repeat center center/cover;
-    position: relative;
-    color: #fff;
-    text-align: center;
-    padding-bottom: 20px; /* Adjusted padding for the button placement */
-}
-
-.hero-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    text-align: center;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #ff7f50; /* Button text color */
-    background-color: #000; /* Button background color */
-    text-decoration: none;
-    font-weight: 700;
-    margin-top: 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #333;
-}
-
-main {
-    padding: 50px 20px;
-    background-color: #f0f8ff; /* Same light blue background color */
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 10px;
-    color: #333;
-}
-
-h2 {
-    font-size: 2.5em;
-    margin-bottom: 20
+</body>
+</html>
